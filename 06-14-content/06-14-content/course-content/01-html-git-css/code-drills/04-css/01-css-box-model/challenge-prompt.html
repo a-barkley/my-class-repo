@@ -8,13 +8,20 @@
     <title>Box-Model</title>
 </head>
 <style>
+    div {
+        padding: 50px;
+    }
     /* =========================== */
     /* select every div element for styling*/
 
         /* create a padding of 50px*/
     
     /* =========================== */
-            
+    p {
+        margin: 0px;
+        padding: 15px;
+        font-size: 20px;
+    }
     /* =========================== */
     /* select every p element for styling */
 
@@ -29,7 +36,8 @@
     /* =========================== */
     .red-textbox-left {
         /* seperate the red box from the yellow with a 200px margin between them */
-
+        margin-top: 200px;
+        margin-left: 50px;
         /* add a margin of 50px to the left of this element*/
 
         float: left;
@@ -40,7 +48,7 @@
     /* =========================== */
     .blue-textbox-right {
         /* add a margin of 50px to the right of this element*/
-
+        margin-right: 50px;
         float: right;
         background-color: blue;
     }
@@ -49,7 +57,7 @@
     /* =========================== */
     .yellow-textbox-initial {
         /* add a margin of 50px to the bottom of this element*/
-
+        margin-bottom: 50px;
         float: initial;
         background-color: yellow;
     }
@@ -58,7 +66,7 @@
     /* =========================== */
     .green-textbox-clear {
         /* seperate the green box from the others with a 250px margin between them */
-
+        margin-top: 250px;
         background-color: green;
         clear: both;
     }
