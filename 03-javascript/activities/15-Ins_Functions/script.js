@@ -20,7 +20,7 @@ var expressHello = function() {
 
 // Functions must be called to execute
 var output = declareHello(); 
-console.log(output);
+console.log(output);//2
 
 expressHello();
 //Functions can be called again to make the block of code execute again
@@ -171,7 +171,7 @@ function iTakeArgs(num, str, params){
   console.log(num, str, params)
   return [num, str, params];
 };
-
+// [13, "cat",["arr"]]
 iTakeArgs(13, "cat", ["arr"])
 
 function iTakeArgsToo(nums, str, params, cb){
@@ -180,7 +180,7 @@ function iTakeArgsToo(nums, str, params, cb){
 };
 
 function iAmFun(placeholder){
-  console.log("I am a named funciton and these are the args: ", placeholder);
+  console.log("I am a named function and these are the args: ", placeholder);
 };
 
 iTakeArgsToo(13, "cat", ["arr"], iAmFun)
@@ -189,4 +189,83 @@ iTakeArgsToo(13, "cat", ["arr"], iAmFun)
 iTakeArgsToo(13, "cat", ["arr"], function(placeholder){
   console.log("This is an anonymous function sometimes called a lambda: ", placeholder);
 });
+
+
+// =========================
+// On the list?
+
+var shoppingList = ["Bread",
+"Dates", 
+"Muffins", 
+"Oranges", 
+"Donuts", 
+"Avocados", 
+"Candy", 
+"Ice Cream", 
+"Rice", 
+"Butter", 
+"Milk", 
+"Eggs", 
+"Cheese", 
+"Onions", 
+"Garlic", 
+"Tomatoes", 
+"Honey", 
+"Yogurt" ]
+
+var targetItem = "Onions";
+var foundItem = false;
+for(var i = 0; i < shoppingList.length; i++){
+  if(shoppingList[i] === targetItem){
+    console.log(targetItem + " are on the list!")
+    foundItem = true;
+  }
+  // if we have reached the end of our list and not found the item
+  if(i === shoppingList.length -1 && !foundItem){
+    console.log(targetItem + " is not on list")
+  }
+}
+
+
+// =========================
+// On the list - Function
+
+function isOntheList(list,target){
+  // Step One
+  // What: Iterate through the list 
+  // How: With a for loop
+  // Why: To examine each element
+  for(var i = 0; i < list.length; i++){
+    // Step Two
+    // What: While examining each element compare it against your Target Element
+    // How: comparison operator ===
+    // Why: To determine if they are equal - the target element exist on the list
+      if(list[i] === target){
+        // Step Three
+        // What: If the Current Element and the Target Element are equal console.log(“found element on list”) and break - no need to examine remaining elements
+        // How: console.log 
+        // Why: To inform us if the Target Element is found on the list
+        return console.log(target + " are on the list!")
+    }
+  }
+  // Step Four
+  // What: Once we have have iterated through the entire list and not found the element console.log(“Item not on list”)
+  // How: console.log
+  // Why: To inform us if the Target Element has not been found on the list
+  return console.log(target + " is not on list")
+};
+
+  
+
+
+isOntheList(shoppingList,targetItem);
+
+isOntheList(shoppingList,"Candy");
+
+isOntheList(shoppingList,"Honey");
+
+isOntheList(shoppingList,"Coffee");
+
+  
+
 

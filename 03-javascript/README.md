@@ -56,4 +56,4 @@
 |[24-Stu_Object-Methods](activities/24-Stu_Object-Methods)| Object methods activity |
 |[25-Ins_Object-This](activities/25-Ins_Object-This)| Introduction to `this` |
 |[26-Stu_Object-This](activities/26-Stu_Object-This)| `this` activity |
-
+|[27-interview-series-pre-work](activities/27-interview-series-pre-work)| Pseudocode - This is the way |

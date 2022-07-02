@@ -22,13 +22,14 @@ planet.population
 // Uses dot notation and logs "Earth"
 //To access the value stored in a property, we use dot notation, as follows:	
 console.log(planet.name);
-	
+// console.log(planet["name"]);
+
 // Uses bracket notation and logs "Earth"
 //We can also use bracket notation to access a value. When we use bracket notation, the key goes in quotes, as shown in the following example:
 console.log(planet["is Nice"]);
 planet.isNice = true;
 
-planet.isNice = false;
+planet["isNice"] = false;
 
 //========================================
 

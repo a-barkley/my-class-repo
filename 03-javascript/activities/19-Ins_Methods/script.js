@@ -49,10 +49,16 @@ console.log(logicalOperators);
 var myNewString = myString.replace("String", "World");
 console.log(myNewString);
 
+// case sensitive 
+// var text = "Visit Microsoft!";
+// var output = text.replace("microsoft", "W3Schools");
+
+// console.log("Lowercase:", output)//"Visit Microsoft!"
+
 //The orginal string is unchanged
 console.log(myString);
 
-
+var name = "farley";
 // forEach
 // The forEach() method executes a provided function once for each array element.
 function report(str, i) {
@@ -86,4 +92,6 @@ const result = words.filter(function(word){
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
+
+
 
