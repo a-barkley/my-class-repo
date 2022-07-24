@@ -10,7 +10,7 @@ const path = require('path');
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/')));
 
-app.get('/jobs', (req, res) => res.json(db);
+// app.get('/jobs', (req, res) => res.json(db);
 
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)

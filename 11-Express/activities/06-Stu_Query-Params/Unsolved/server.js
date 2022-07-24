@@ -11,10 +11,10 @@ const sortHelper = (type) =>
   termData.sort(sortData('name', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
-// It is requesting data from the terms file
+
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-  // req.query refers to the terms file
+
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -30,10 +30,10 @@ app.get('/api/terms/', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-// Returns the object that is requested, or nothing because there is a typo
+
 app.get('/api/term/:term', (req, res) => {
   // TODO: Add a comment describing the content of req.params in this instance
-  // It is going to lowercase the requested object name
+
   const requestedTerm = req.params.term.toLowerCase();
 
   for (let i = 0; i < termData.length; i++) {
@@ -47,7 +47,7 @@ app.get('/api/term/:term', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-// Returns an array of all of the requested categories, lowercased
+
 app.get('/api/terms/:category', (req, res) => {
   const requestedCategory = req.params.category.toLowerCase();
   const result = [];

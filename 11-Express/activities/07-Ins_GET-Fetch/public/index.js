@@ -9,8 +9,8 @@ const termButton = document.getElementById('term-btn');
 //       return response.json();
 //   }).then(function(json){
 //     // console.log(json);
-//     return json;
-//     // response.forEach((item) => renderTerm(item)
+//     // return json;
+//     json.forEach((item) => renderTerm(item)
 //   });
 // }
 

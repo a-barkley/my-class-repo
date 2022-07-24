@@ -36,8 +36,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/:character', (req, res) => {
-  ///api/yoda?location=true
-  console.log(req.query)
+  ///api/yoda?q=true
+  console.log(req.query)//{q:true}
 
   const chosen = req.params //{character: yoda}
   console.log(req.params);

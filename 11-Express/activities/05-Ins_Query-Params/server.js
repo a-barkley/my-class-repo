@@ -13,12 +13,17 @@ app.get('/api/terms', (req, res) => res.json(termData));
 //   res.json(termData);
 // });
 
+
 //what if...
 
-app.get('/api/terms/anything', (req, res) => {
-  // ????? what would occur to the route below?
-  res.send("Yo!") 
-});
+// app.get('/api/terms/anything', (req, res) => {
+//   // ????? what would occur to the route below?
+//   res.send("Yo!") 
+// });
+
+// app.get('/api/terms/seo', (req, res) => {
+//   return res.json(termData[0]);
+//  }
 
 
 // GET route that returns any specific term
@@ -29,7 +34,7 @@ app.get('/api/terms/:term/', (req, res) => {
   // /api/terms/rest
   // /api/terms/anything
 
-  req.params //=> {term: "farley"}
+  req.params //=> {term: "seo"}
   req.params //=> {term: "asher"}
   // Coerce the specific search term to lowercase
   const requestedTerm = req.params.term.toLowerCase();
@@ -45,9 +50,6 @@ app.get('/api/terms/:term/', (req, res) => {
   return res.json('No match found');
 });
 
-// app.get('/api/terms/seo', (req, res) => {
-//   return res.json(termData[0]);
-//  }
 
 
 // Fallback route for when a user attempts to visit routes that don't exist

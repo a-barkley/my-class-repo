@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 });
 
 // What does this route do?
-app.get('/api/characters', (req, res) => {
+app.get('/api/characters/', (req, res) => {
   // /api/characters?t=moana
   console.log(req.query)
   var params = req.params;//{}

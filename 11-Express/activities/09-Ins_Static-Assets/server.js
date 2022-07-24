@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 // Serve images, css files, js files from the public directory
 // Allows us to reference files with their relative path

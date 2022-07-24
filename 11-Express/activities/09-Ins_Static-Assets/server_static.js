@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 const path = require('path');
 
 // Creates individual routes for every static asset
