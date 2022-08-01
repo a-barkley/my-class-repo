@@ -23,6 +23,13 @@ app.get('/paths', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/paths.html'))
 );
 
+app.delete('/delete/:id', (req,res) => {
+  console.log('delete route hit')
+  console.log(req.params.id)
+  console.log(req.query.foo)
+  console.log(req.query.id)
+})
+
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );

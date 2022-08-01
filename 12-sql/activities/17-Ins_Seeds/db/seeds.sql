@@ -1,3 +1,5 @@
+-- USE course_db;
+
 INSERT INTO courses (id, course_title, course_description, active)
 VALUES (001, "Algebra I", "Linear equations, inequalities, functions, and graphs", true),
        (002, "Pre-Calculus", "Polynomials, Complex Numbers, Vectors", true),

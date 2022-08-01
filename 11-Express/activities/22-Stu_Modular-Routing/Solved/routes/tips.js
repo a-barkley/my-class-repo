@@ -3,6 +3,7 @@ const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the tips
+// /api/tips/
 tips.get('/', (req, res) => {
   console.info(`${req.method} request received for tips`);
   readFromFile('./db/tips.json').then((data) => res.json(JSON.parse(data)));

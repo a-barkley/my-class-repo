@@ -10,3 +10,4 @@ CREATE TABLE students (
   enrolled BOOLEAN NOT NULL
 );
 
+--   mysql -u root -p

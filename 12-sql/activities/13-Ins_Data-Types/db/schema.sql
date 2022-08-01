@@ -5,6 +5,7 @@ USE course_db;
 
 CREATE TABLE courses (
   id INT NOT NULL,
+   -- id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   course_title VARCHAR(30) NOT NULL,
   course_description TEXT NOT NULL,
   active BOOLEAN NOT NULL ,
