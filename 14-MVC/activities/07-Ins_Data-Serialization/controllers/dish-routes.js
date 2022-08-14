@@ -2,17 +2,17 @@ const router = require('express').Router();
 const Dish = require('../models/Dish');
 
 // get one dish without serializing data
-router.get('/dish/:id', async (req, res) => {
-  try {
-    const dishData = await Dish.findByPk(req.params.id);
-    console.log(dishData)//this is an obj
-    const disgObj = dishData.dataValues//this works
-    console.log("disgObj",disgObj)
-    res.render('dish', disgObj);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// router.get('/dish/:id', async (req, res) => {
+//   try {
+//     const dishData = await Dish.findByPk(req.params.id);
+//     console.log(dishData)//this is an obj
+//     const disgObj = dishData.dataValues//this works
+//     console.log("disgObj",disgObj)
+//     res.render('dish', disgObj);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 // get one dish with serialized data
 router.get('/dish/:id', async (req, res) => {
