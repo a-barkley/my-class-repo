@@ -53,7 +53,6 @@
 |[24-Stu_Subdoc-Population](activities/24-Stu_Subdoc-Population)| Subdoc-Population |
 |[25-Ins_CRUD-Subdoc](activities/25-Ins_CRUD-Subdoc)| Introduction - CRUD-Subdoc |
 |[26-Stu_CRUD-Subdoc](activities/26-Stu_CRUD-Subdoc)| CRUD-Subdoc |
-
-
+|[27-Stu_Mini-Project](activities/27-Stu_Mini-Project)| NoSQL Mini-Project |
 
 

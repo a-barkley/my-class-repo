@@ -8,6 +8,7 @@ module.exports = {
   },
   devServer: {
     // The `hot` option is to use the webpack-dev-server in combination with the hot module replacement API.
+    // Setting hot: 'only' doesn't reload the browser page when there are errors (build fails) whereas hot: true will.
     hot: 'only',
   },
   plugins: [

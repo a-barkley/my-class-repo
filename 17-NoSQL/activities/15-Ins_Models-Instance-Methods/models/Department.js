@@ -10,6 +10,7 @@ const departmentSchema = new mongoose.Schema({
 
 // Schemas can also define methods that act on an instance of the model or document
 // This custom method extends the methods object
+// https://mongoosejs.com/docs/guide.html#methods
 departmentSchema.methods.getDocumentInfo = function () {
   // The 'this' keyword is used to specify the properties belonging to the particular instance
   console.log(
@@ -28,7 +29,8 @@ const produce = new Department({ name: 'Produce', totalStock: 100 });
 // the path, and two optional parameters, type and options. 
 // In our case, we are getting the value of totalStock and we want it returned as a String. 
 // We didn't use options in our case.
-// https://mongoosejs.com/docs/guide.html#methods
+// https://mongoosejs.com/docs/api/document.html
+// https://mongoosejs.com/docs/api/document.html#document_Document-get
 const responseGetInstance = produce.get('totalStock', String);
 console.log(
   `The value of the totalStock for this document in string form is ${responseGetInstance}`

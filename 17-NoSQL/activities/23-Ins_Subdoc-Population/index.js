@@ -2,12 +2,15 @@ const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
 
+// The process.cwd() method returns the current working directory of the Node.js process.
+// https://nodejs.org/api/process.html#processcwd
 const cwd = process.cwd();
 
 const PORT = 3001;
 const app = express();
 
 // Note: not necessary for the Express server to function. This just helps indicate what activity's server is running in the terminal.
+
 const activity = cwd.includes('01-Activities')
   ? cwd.split('/01-Activities/')[1]
   : cwd;

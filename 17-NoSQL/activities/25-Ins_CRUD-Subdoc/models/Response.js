@@ -4,7 +4,7 @@ const responseSchema = new Schema(
   {
     reactionId: {
       type: Schema.Types.ObjectId,
-      default: () => new Types.ObjectId(),//generate a new ID
+      default: () => new Types.ObjectId(),
     },
     responseBody: {
       type: String,

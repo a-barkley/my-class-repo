@@ -21,7 +21,7 @@ module.exports = {
       .then((video) => {
         return User.findOneAndUpdate(
           { _id: req.body.userId },
-          { $addToSet: { videos: video._id } },//insert unless already exists
+          { $addToSet: { videos: video._id } },
           { new: true }
         );
       })

@@ -21,6 +21,8 @@ module.exports = {
       .then((post) => {
         return User.findOneAndUpdate(
           { _id: req.body.userId },
+          // $addToSet do not add the item to the given field if it already contains it, on the other hand 
+          // $push will add the given object to field whether it exists or not.
           { $addToSet: { posts: post._id } },
           { new: true }
         );

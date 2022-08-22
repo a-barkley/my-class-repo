@@ -14,6 +14,7 @@ const librarySchema = new mongoose.Schema({
   // book: bookSchema,
   // book: {type: bookSchema, required: true},
   books: [bookSchema],
+  // books: [{type: bookSchema, required: true}],
   lastAccessed: { type: Date, default: Date.now },
 });
 
