@@ -13,6 +13,7 @@ const resolvers = {
     },
   },
 
+  // 🔑 We call the signToken() function in the resolvers where we want to transmit data securely to generate a signed token:
   Mutation: {
     addProfile: async (parent, { name, email, password }) => {
       const profile = await Profile.create({ name, email, password });

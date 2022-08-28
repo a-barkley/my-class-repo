@@ -25,6 +25,8 @@ const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
   const token = localStorage.getItem('id_token');
   // return the headers to the context so httpLink can read them
+  // 🔑 We then use the setContext() method to retrieve an existing token from local storage and attach the JWT token to every request sent from the client. 
+  // The back end will then use this information to verify the request:
   return {
     headers: {
       ...headers,

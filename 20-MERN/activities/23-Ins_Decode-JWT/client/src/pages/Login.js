@@ -20,6 +20,8 @@ const Login = (props) => {
   };
 
   // submit form
+  // Using the functionality we just added, we execute the login mutation and receive a token in return. 
+  // This token is then immediately stored using our AuthService functionality:
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
